@@ -1,0 +1,44 @@
+body
+{
+    background: url(falling-music-notes_wy0d5iyeh__F0000.png)no-repeat;
+    background-size: cover;
+}
+
+.keys
+{
+   display: flex;
+   flex: 1;
+   min-height: 100vh;
+   align-items: center; //brings all the items vertically center
+   justify-content: center; //brings items horizontally center
+}
+
+.key{
+    background-color:  #202020;
+    border-radius: 7px;
+    border:solid 2px #ffffff;
+    margin: 1em;
+    width: 100px;
+    text-align: center;
+    text-shadow: 0 0 .7rem black;
+    transition: all .09s;
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 500rem #ffc600;
+  }
+
+  .sound {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #ffd12a;
+  }
+
+kbd{
+    color: yellow;
+    display: block;
+    font-size: 4rem;
+    }
